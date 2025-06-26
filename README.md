@@ -18,6 +18,16 @@ The entire logic (data loading, model building, training, and prediction) is con
 ## 🖥️ Getting Started
 
 ### 1. Install Requirements
-
-```bash
 pip install tensorflow numpy matplotlib
+### 2. Run the Classifier
+python digit_classifier.py
+## 🏗️ Model Structure
+Input: 28 x 28 pixels (grayscale image)
+
+Flatten: → 784 values
+
+Dense: 128 units (ReLU)
+
+Dense: 32 units (ReLU)
+
+Output: 10 units (Softmax for digits 0–9)
